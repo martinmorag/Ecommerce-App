@@ -1,0 +1,32 @@
+.header {
+    background-color: #F2FDFF;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.header_logo, .nav_bar {
+    margin: 0 2rem 0 2rem;
+}
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 33vw;
+    font-size: 1.25rem;
+}
+.nav_link span {
+    padding: 0 7px;
+}
+.nav_link {
+    display: flex;
+    padding: 5px 0 0 0;
+}
+.nav_link:active {
+    color: gray;
+}
+.nav_icon {
+    width: 20px;
+    height: auto;
+}
+

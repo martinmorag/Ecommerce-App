@@ -1,0 +1,79 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+}
+.flower_icon {
+    margin: 0 auto;
+    margin: 0 1rem;
+}
+.title {
+    color: black;
+    text-align: inherit;
+    font-size: 1.75rem;
+}
+.title_div {
+    display: flex;
+    background-color: #DBCBD8;
+    width: 40vw;
+    padding: 2rem 0 1rem;
+    justify-content: center;
+    border-radius: 50% 50% 0 0;
+}
+.fieldset {
+    color: black;
+    background-color: #F2FDFF;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+.fieldset_title {
+    font-size: large;
+    margin: 0.9rem;
+}
+.input {
+    margin: 0.35rem 0;
+}
+.input_box {
+    margin: 0.25rem 0;
+    border-radius: 5px;
+}
+.submit_button {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 8rem;
+    margin: 2rem auto 3rem auto;
+    border-radius: 10px;
+    background-color: #DBCBD8;
+}
+.submit_icon {
+    width: 20px;
+    height: auto;
+}
+.submit_button:active {
+    background-color: #B8A8B6;
+    transform: scale(0.95);
+}
+.submit_div {
+    display: flex;
+    width: 8rem;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+.submitBtn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+
+.loadingOverlay {
+    position: absolute;
+    margin-left: 12rem;
+    
+}

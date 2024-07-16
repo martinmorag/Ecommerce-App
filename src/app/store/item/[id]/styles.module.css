@@ -1,0 +1,57 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    flex-direction: column;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr; /* Two columns: image and description */
+    gap: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+    margin-top: 20px;
+    text-align: left;
+    color: #333; /* Darker color for better readability on white background */
+}
+
+.details h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #222; /* Slightly darker color for headings */
+}
+
+.details p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 2rem;
+    color: #808080;
+}

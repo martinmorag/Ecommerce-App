@@ -1,0 +1,70 @@
+.card {
+    background-color: #b1b1b1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.cardContent {
+    padding: 20px;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.addToCartButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addToCartButton:hover {
+    background-color: #0056b3;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 10px; 
+    position: absolute;
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.deleteButton, .editButton {
+    padding: 10px;
+    width: 7rem;
+    background-color: #F2FDFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+    color: black; 
+}
+
+.card:hover .actionButtons {
+    opacity: 1;
+}
+
+/* Optional: button hover effects */
+.deleteButton:hover, .editButton:hover {
+    background-color: #ebe5d2;
+}
