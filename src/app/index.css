@@ -10,6 +10,7 @@
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: bottom;
+    overflow: hidden;
 }
 .landing-img{
     margin: 0;
