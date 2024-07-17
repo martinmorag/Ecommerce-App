@@ -38,7 +38,7 @@ const Store: React.FC = ({session}) => {
     };
 
     const filteredItems = items.filter(item =>
-        item.name.toLowerCase().includes(searchTerm.toLowerCase())
+        item.name && item.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
     const handleDelete = async (itemId: number, itemEmail: string) => {
@@ -81,9 +81,10 @@ const Store: React.FC = ({session}) => {
                 {filteredItems.map((item: Item) => (
                     <div key={item._id} 
                         onClick={(e) => {
-                        e.stopPropagation(); // Stop event propagation
-                        router.push(`/store/item/${item._id}`);
-                    }}
+                            if ((e.target as HTMLElement).tagName !== 'BUTTON') {
+                                router.push(`/store/item/${item._id}`);
+                            }
+                        }}
                     >
                         <ItemCard
                                 key={item._id}
