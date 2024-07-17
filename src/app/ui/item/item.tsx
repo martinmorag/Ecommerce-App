@@ -13,7 +13,8 @@ const ItemCard: React.FC<ChildProps> = ({ item, session, handleDelete }) => {
     const [isLoading, setIsLoading] = useState(false);
     const [isDeleted, setIsDeleted] = useState(false); // State to track if item is deleted
 
-    const onDelete = async () => {
+    const onDelete = async (event: React.MouseEvent<HTMLButtonElement>) => {
+        event.stopPropagation();
         setIsLoading(true);
         try {
             await handleDelete(item._id, item.email);

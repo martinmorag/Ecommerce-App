@@ -6,11 +6,14 @@ import ItemCard from "@/app/ui/item/item";
 import { Item } from "@/lib/definitions";
 import Link from "next/link";
 import {API_BASE_URL} from "@/lib/api";
+import { useRouter } from 'next/navigation';
 
 // @ts-ignore
 const Store: React.FC = ({session}) => {
     const [searchTerm, setSearchTerm] = useState<string>('');
     const [items, setItems] = useState<Item[]>([]);
+    const router = useRouter();
+
     console.log(API_BASE_URL)
     useEffect(() => {
         const fetchItems = async () => {
@@ -76,14 +79,19 @@ const Store: React.FC = ({session}) => {
 
             <div className={styles.grid}>
                 {filteredItems.map((item: Item) => (
-                    <Link key={item._id} href={`/store/item/${item._id}`}>
+                    <div key={item._id} 
+                        onClick={(e) => {
+                        e.stopPropagation(); // Stop event propagation
+                        router.push(`/store/item/${item._id}`);
+                    }}
+                    >
                         <ItemCard
                                 key={item._id}
                                 item={item}
                                 session={session}
                                 handleDelete={handleDelete}
                         />
-                    </Link>
+                    </div>
                 ))}
             </div>
         </main>
