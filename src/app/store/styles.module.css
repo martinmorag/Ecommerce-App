@@ -29,3 +29,12 @@
     border-radius: 5px;
     color: black;
 }
+
+.logout {
+    position: absolute;
+    left: 2rem;
+    color: black; 
+    background-color: lightblue; 
+    padding: 10px 20px 10px;
+    border-radius: 5px;
+}

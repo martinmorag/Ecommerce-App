@@ -5,8 +5,8 @@ import "@/app/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ecommerce Website",
-  description: "Created with NextJS",
+  title: "Artisan",
+  description: "Ecommerce website for displaying products and add them to a cart",
 };
 
 export default function RootLayout({

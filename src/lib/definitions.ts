@@ -1,4 +1,5 @@
 /* typescript definitions */
+import { ReactNode } from "react";
 
 export interface Item {
   _id: number; // Auto unique ID (assuming it's a number)
@@ -12,6 +13,29 @@ export interface Item {
   category: number; // ID of the category (assuming it's a number)
   email: string;
 };
+
+export interface Itemv2 {
+  _id: string;
+  name: string;
+  description: string;
+  price: number;
+  images: string[]; // Array of image URLs or Base64 strings
+}
+
+export interface CartItem {
+  _id: string;
+  quantity: number;
+  item: Itemv2;
+  totalPrice: number; // Add totalPrice field
+}
+
+export interface CardProps {
+  item: Itemv2;
+  quantity: number;
+  totalPrice: number; // Add totalPrice to props
+  onIncrease: () => void;
+  onDecrease: () => void;
+}
 
 export type User = {
   id: string;
@@ -29,3 +53,7 @@ export interface ItemPageProps {
 }
 
 export type Review = {_id: string, rating: number, itemId: string}
+
+export interface LayoutProps {
+  children: ReactNode;
+}

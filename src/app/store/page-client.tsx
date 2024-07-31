@@ -65,7 +65,7 @@ const Store: React.FC = ({session}) => {
     return (
 
         <main className={styles.container}>
-            <Link style={{color: 'black', backgroundColor: 'lightblue', padding: '10px 20px'}} href="/api/auth/signout">Sign Out</Link>
+            <Link className={styles.logout} href="/api/auth/signout">Log Out</Link>
             <img className={styles.logo} src='/logo.png' alt='logo'/>
             <div className={styles.searchContainer}>
                 <input

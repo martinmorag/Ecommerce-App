@@ -1,0 +1,19 @@
+.cartTitle {
+    margin: 2rem 0;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartIcon {
+    margin-left: .6rem;
+    width: 30px;
+    height: 30px;
+}
+
+.cartContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

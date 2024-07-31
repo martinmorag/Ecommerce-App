@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+}
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30vw;
+}
+.image {
+    width: 150px;
+    height: auto;
+    padding: 1rem;
+}
+.quantityContainer {
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.increaseButton, .decreaseButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    background-color: aliceblue;
+}
